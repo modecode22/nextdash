@@ -1,0 +1,94 @@
+{
+  "Home": {
+    "title": "الرئيسية",
+    "description": "مرحبا بكم في موقعنا"
+  },
+  "Metadata": {
+    "default_title": "لوحة الادارة",
+    "default_description": "مرحبا بكم في موقعنا",
+    "login_page_title": "تسجيل الدخول",
+    "login_page_description": "تسجيل الدخول إلى لوحة القيادة",
+    "forgot_password_page_title": "هل نسيت كلمة السر",
+    "forgot_password_page_description": "صفحة نسيت كلمة المرور",
+    "signup_page_title": "اشتراك",
+    "signup_page_description": "قم بالتسجيل في منصتنا"
+  },
+  "Login": {
+    "title": "مرحبًا بعودتك",
+    "description": "الرجاء تسجيل الدخول للمتابعة",
+    "remember_me": "تذكرنى",
+    "success": "تم تسجيل الدخول بنجاح!"
+  },
+  "Signup": {
+    "title": "انضم إلينا",
+    "description": "إنشاء حساب جديد للمتابعة",
+    "success": "تم إنشاء حسابك بنجاح!",
+    "already_have_account": "هل لديك حساب؟"
+  },
+  "ForgotPassword": {
+    "back_to_login": "العودة إلى تسجيل الدخول",
+    "title": "هل نسيت كلمة السر",
+    "success": "تم ارسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني بنجاح",
+    "description": "الرجاء إدخال بريدك الإلكتروني لإعادة تعيين كلمة المرور الخاصة بك"
+  },
+  "Common": {
+    "email": "بريد إلكتروني",
+    "password": "كلمة المرور",
+    "login": "تسجيل الدخول",
+    "signup": "تسجيل الحساب",
+    "forgot_password": "هل نسيت كلمة السر",
+    "submit": "يُقدِّم",
+    "total_revenue": "إجمالي الإيرادات",
+    "subscriptions": "الاشتراكات",
+    "sales": "مبيعات",
+    "active_users": "المستخدمين النشطين",
+    "recent_sales": "المبيعات الأخيرة",
+    "dashboard": "لوحة التحكم",
+    "download": "تحميل",
+    "sales_overview": "نظرة عامة على المبيعات",
+    "password_confirmation": "تأكيد كلمة المرور",
+    "username": "اسم المستخدم",
+    "full_name": "الاسم الكامل"
+  },
+  "Validation": {
+    "email_required": "البريد الإلكتروني مطلوب",
+    "email_invalid": "البريد الإلكتروني غير صالح",
+    "password_required": "كلمة المرور مطلوبة",
+    "password_mismatch": "كلمة المرور وتأكيد كلمة المرور غير متطابقين",
+    "password_confirmation_required": "مطلوب تأكيد كلمة المرور",
+    "full_name_required": "يجب أن لا يقل طول الاسم الكامل عن 4 أحرف",
+    "username_required": "يجب أن لا يقل طول اسم المستخدم عن 4 أحرف"
+  },
+  "Dashboard": {
+    "404": "404",
+    "500": "500",
+    "dashboard": "لوحة التحكم",
+    "widgets": "الحاجيات",
+    "charts": "الرسوم البيانية",
+    "add": "إضافة",
+    "customers": "العملاء",
+    "components": "العناصر",
+    "list": "القائمة",
+    "statistics": "الإحصائيات",
+    "tables": "الجداول",
+    "cards": "البطاقات",
+    "forms": "النماذج",
+    "myaccount": "حسابي",
+    "settings": "إعدادات",
+    "billing": "الفواتير",
+    "otp": "كلمة السر لمرة واحدة",
+    "pages": "الصفحات",
+    "login": "تسجيل الدخول",
+    "signup": "تسجيل الحساب",
+    "error": "خطأ",
+    "auth": "المصادقة",
+    "reset_password": "إعادة تعيين كلمة المرور",
+    "logout": "تسجيل خروج"
+  },
+  "Error": {
+    "500_title": "500 صفحة",
+    "reset_button": "إعادة ضبط",
+    "404_title": "404 صفحة",
+    "404_message": "الصفحة التي تبحث عنها ليست هنا."
+  }
+}

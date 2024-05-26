@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  /* Optional, if you also want font styles */
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+@layer components {
+  .link {
+    @apply text-dark-50 underline underline-offset-2 decoration-light-950 hover:decoration-dark-50 hover:text-dark-100 active:text-dark-500 active:decoration-dark-400 dark:text-light-950 dark:decoration-dark-50 dark:hover:text-light-600 dark:hover:decoration-light-950 dark:active:decoration-light-600 dark:active:text-light-500 ;
+  }
+  .muted-text {
+    @apply text-dark-50 dark:text-light-950;
+  }
+  .label-text {
+    @apply dark:text-light-600 text-dark-400;
+  }
+  .overlay {
+    @apply dark:bg-dark-950/80 bg-light-50/60;
+  }
+  .input-bg{
+    @apply dark:bg-dark-700 bg-light-300;
+  }
+  .popover-bg{
+    @apply dark:bg-dark-800 bg-white;
+  }
+
+  .prose h1 {
+    @apply text-5xl text-pretty my-8  text-dark-950 dark:text-light-50
+  }
+  .prose h2 {
+    @apply text-4xl text-balance my-7 text-dark-900 dark:text-light-100
+  }
+  .prose h3 {
+    @apply text-3xl text-balance my-6 text-dark-800 dark:text-light-200
+  }
+  .prose h4 {
+    @apply text-2xl text-balance my-5 text-dark-700 dark:text-light-300
+  }
+  .prose h5 {
+    @apply text-xl text-balance my-4 text-dark-700 dark:text-light-300
+  }
+  .prose h6 {
+    @apply text-xl text-balance my-3 text-dark-600 dark:text-light-400
+  }
+  .prose p {
+    @apply  text-balance  mb-2 text-dark-500 dark:text-light-500 text-lg
+  }
+  .prose li {
+    @apply list-disc label-text mb-1
+  }
+  .prose ul {
+    @apply list-disc label-text mb-2
+  }
+  .prose ul ul {
+    @apply list-disc pl-3
+  }
+  .prose ol {
+    @apply list-decimal label-text mb-2
+  }
+  .prose a {
+    @apply text-dark-50 underline underline-offset-2 decoration-primary-700/80 hover:decoration-primary-600 hover:text-dark-500 active:text-dark-950 active:decoration-primary-500 dark:text-light-950 dark:decoration-primary-300 dark:hover:text-light-600 dark:hover:decoration-primary-400 dark:active:decoration-primary-500 dark:active:text-light-50 decoration-dashed
+  }
+  .prose img {
+    @apply rounded overflow-hidden my-4
+  }
+  .prose blockquote {
+    @apply dark:bg-dark-800 label-text italic mb-4  bg-white p-3 border-dashed dark:border-dark-700 border-light-200 
+  }
+  [dir="rtl"] .prose blockquote {
+    @apply rounded-l rounded-r-sm border-r-2
+  }
+  [dir="ltr"] .prose blockquote {
+    @apply rounded-r rounded-l-sm border-l-2 
+  }
+  .prose code {
+    @apply dark:bg-dark-950 dark:border-dark-500 border-dashed dark:text-light-950 text-dark-50 shadow-sm  bg-light-100 border px-2 rounded
+  }
+  .prose pre code {
+    @apply bg-inherit border-none px-0 shadow-none
+  }
+  .prose .code-renderer {
+    @apply mb-12
+  }
+  .prose .code-header p {
+    @apply !m-0 !text-xs
+  }
+  .prose  {
+    @apply muted-text
+  }
+  .prose hr  {
+    @apply dark:border-dark-700 border-dashed mb-4 border-light-400
+  }
+  .prose kbd {
+    @apply dark:bg-dark-700 bg-white border dark:border-t-dark-300 border-t-light-300 px-1 rounded-lg dark:border-dark-400 border-light-400 text-dark-50 dark:text-light-950 shadow-sm text-xs  dark:shadow-dark-50/20 shadow-light-50/20 
+  }
+}
+/* Specify the width and color of the scrollbar */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+
+
+/* Handle of the scrollbar */
+*::-webkit-scrollbar-thumb {
+  background-color: var(--dark-500);
+  border-radius: 5px;
+}
+
+/* Track of the scrollbar */
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Specify the width and color of the scrollbar for Firefox */
+/* Note: Firefox supports scrollbar styling using `scrollbar-color` and `scrollbar-width` properties */
+/* For simplicity, this example assumes Firefox 64 and later versions that support these properties */
+/* For older versions of Firefox, you may need to use -moz properties */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-500) transparent;
+}
+
+/* Specify the width and color of the scrollbar for Internet Explorer and Edge */
+/* Note: This example assumes Microsoft Edge Chromium or later versions */
+/* For Internet Explorer, you may need to use -ms properties */
+*::-ms-scrollbar {
+  width: 6px;
+}
+
+*::-ms-thumb {
+  background-color: var(--dark-500);
+  border-radius: 5px;
+}
+
+*::-ms-track {
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+  .code-scrollbar:not(.light)::-webkit-scrollbar-thumb {
+    background-color: var(--dark-700);
+    border-radius: 5px;
+  }
+  .code-scrollbar:not(.light){
+    scrollbar-color: var(--dark-700) transparent;
+  }
+  .code-scrollbar:not(.light)::-ms-thumb{
+    scrollbar-color: var(--dark-700) transparent;
+  }
+
+
+
+  html.light .code-scrollbar::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 5px;
+}
+html.light .code-scrollbar{
+  scrollbar-color: white transparent;
+}
+html.light .code-scrollbar::-ms-thumb{
+  scrollbar-color: white transparent;
+}
+
+
+
+@layer demo {
+  .highlighted-text-shadow {
+    text-shadow:
+      /* regular text-shadow */
+      0 .15ch 15px var(--shadow),
+      /* text-shadow highlight */
+      0 -2px 0 var(--highlight);
+  }
+}
+
